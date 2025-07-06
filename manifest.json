@@ -1,0 +1,13 @@
+{
+    "name": "Posture Tracker PWA",
+    "short_name": "PostureTracker",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#667eea",
+    "description": "AI-powered posture tracker using TensorFlow.js",
+    "icons": [{
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }]
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posture Tracker PWA</title>
+    <link rel="manifest" href="manifest.json" />
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: start; background: linear-gradient(135deg, #667eea, #764ba2); height: 100vh; margin: 0; color: white; }
+        video { margin-top: 20px; border-radius: 8px; }
+        #status { margin-top: 10px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>🎯 Posture Tracker</h1>
+    <video id="webcam" autoplay muted playsinline width="320" height="240"></video>
+    <div id="status">Loading...</div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.14.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+    <script src="app.js"></script>
+</body>
+</html>
